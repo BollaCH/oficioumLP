@@ -1,0 +1,62 @@
+.section-cta {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-grey-light-2;
+  &__wrapper {
+    display: flex;
+    width: 80%;
+    height: 70vh;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: $color-grey-light-1;
+  }
+  &__img {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__img--cover {
+    width: 70%;
+    display: block;
+  }
+  &__details {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem 8rem;
+  }
+  &__header {
+    font-size: 3rem;
+  }
+  &__details--text {
+    line-height: 1.5;
+    font-size: 1.6rem;
+    text-align: justify;
+  }
+  &__details--btn {
+    text-decoration: none;
+    font-size: 2rem;
+    color: $color-secondary;
+    border: 1px solid transparent;
+    border-radius: 9px;
+    padding: 1rem 2rem;
+    background-color: $color-primary;
+  }
+  &__details--btn:active,
+  &__details--btn:visited {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  &__details--btn:hover {
+    background-color: $color-primary-dark;
+    scale: 1.1;
+  }
+}
+#cta {
+  align-self: flex-end;
+}

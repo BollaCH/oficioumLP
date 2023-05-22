@@ -1,0 +1,37 @@
+.about {
+  padding: 10rem 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__details {
+    display: flex;
+  }
+  &__text {
+    width: 60%;
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: justify;
+    &--p {
+      width: 70%;
+      font-size: 1.8rem;
+      font-weight: 700;
+      & span {
+        font-weight: 900;
+        font-size: 2rem;
+      }
+    }
+    &--header {
+      // width: 50%;
+      font-size: 4rem;
+    }
+  }
+  &__img {
+    width: 40%;
+    &--img {
+      width: 100%;
+    }
+  }
+}

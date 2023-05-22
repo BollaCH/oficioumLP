@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="sass/main.css" />
+    <link rel="stylesheet" href="sass/caroseul.css" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+    crossorigin="anonymous"
+  </head>
+  <body>
+    <div class="div" id="home"></div>
+    <nav class="nav-bar">
+      <div class="nav-bar__wrapper">
+        <div class="nav-bar__logo">
+          <a href="#home">
+            <img
+              class="nav-bar__logo--img"
+              src="imgs/logo_oficioum_-removebg-preview.png"
+              alt="Oficium Logo"
+          /></a>
+        </div>
+        <div class="nav-bar__navigation">
+          <a href="#cta" class="nav-bar__navigation--link">Link 1</a>
+          <a href="#books" class="nav-bar__navigation--link">Link 2</a>
+          <a href="#form" class="nav-bar__navigation--link">Link 3</a>
+        </div>
+      </div>
+    </nav>
+    <section class="herosection">
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide bg-car"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators mb-5">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active card-1">
+            <img src="imgs/img001.jpeg" class="d-block" alt="..." />
+            <div class="carousel-caption d-none d-md-block card-details">
+              <h5 class="carousel-title">First slide label</h5>
+              <p class="caroseul-details">
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item card-2">
+            <img src="imgs/img002.jpeg" class="d-block" alt="..." />
+            <div class="carousel-caption d-none d-md-block card-details">
+              <h5 class="carousel-title">Second slide label</h5>
+              <p class="caroseul-details">
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item card-3">
+            <img src="imgs/img003.jpeg" class="d-block" alt="..." />
+            <div class="carousel-caption d-none d-md-block card-details">
+              <h5 class="carousel-title">Third slide label</h5>
+              <p class="caroseul-details">
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="about__details">
+        <div class="about__img">
+          <img src="imgs/Mokup Todos.png" alt="" class="about__img--img" />
+        </div>
+        <div class="about__text">
+          <h2 class="about__text--header">Bem-vindos à editora Oficioum</h2>
+          <p class="about__text--p">
+            <span>
+              Somos uma editora dedicada a trazer conhecimento técnico
+              enriquecedor e experiências transformadoras para leitores que
+              buscam conteúdos para uma nova profissão e atualização
+              profissional.</span
+            >
+            <br />
+            <br />
+            Com um compromisso firme com a qualidade, buscamos constantemente
+            trabalhar com autores talentosos e obras que ofereçam uma
+            perspectiva única e envolvente. Nossa equipe editorial experiente e
+            apaixonada trabalha em estreita colaboração com os escritores,
+            fornecendo orientação e suporte em cada etapa do processo.
+            <br />
+            <br />
+            Nosso catálogo abrange o gênero literário técnico. Acreditamos que a
+            leitura profissionalizante sempre terá o poder de impulsionar
+            carreiras e expandir horizontes. Por isso, nos empenhamos em
+            publicar livros que possam profissionalizar e inspirar nossos
+            profissionais. Além de nossa dedicação à qualidade editorial, também
+            valorizamos a experiência dos nossos leitores. Buscamos oferecer
+            livros bem produzidos, com design cuidadoso e acabamentos que
+            proporcionem uma leitura agradável. Também estamos constantemente
+            explorando novas formas de alcançar nosso público, adaptando-nos ao
+            mundo digital e às plataformas emergentes.
+          </p>
+        </div>
+      </div>
+      <div id="cta"></div>
+    </section>
+    <section class="section-cta">
+      <div class="section-cta__wrapper">
+        <div class="section-cta__img">
+          <img
+            class="section-cta__img--cover"
+            src="imgs/Cuidador-de-idosos-mockup-1.png"
+            alt=""
+          />
+        </div>
+        <div class="section-cta__details">
+          <h3 class="section-cta__header">Cuidador de Idosos</h3>
+          <p class="section-cta__details--text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+            amet quasi, ut, asperiores illo eius delectus porro tempora
+            laboriosam nisi sequi eum aspernatur ea. Fugit quis nulla eligendi
+            veniam praesentium.
+          </p>
+          <a href="#form" class="section-cta__details--btn">Pre Order Now</a>
+        </div>
+      </div>
+      <div id="books"></div>
+    </section>
+    <section class="booksection">
+      <div class="booksection__books">
+        <div class="booksection__title">
+          <h2 class="booksection__title--text">
+            Fique por dentro dos nossos proximos lançamentos
+          </h2>
+        </div>
+        <div class="booksection__book-2">
+          <div class="booksection__book-2--details">
+            <h3 class="booksection__book-2--header">Rececionista de Hotel</h3>
+            <p class="booksection__book-2--text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex sequi
+              id quidem, culpa mollitia dolores natus porro voluptatum cumque.
+              Veritatis pariatur excepturi cumque natus vitae? Veniam ea quae
+              laboriosam dolorum?
+            </p>
+          </div>
+          <div class="booksection__book-2--img">
+            <img
+              src="imgs/Rececionista-mockup-1.png"
+              alt=""
+              class="booksection__book-2--img--cover"
+            />
+          </div>
+        </div>
+        <div class="booksection__book-1">
+          <div class="booksection__book-1--img">
+            <img
+              src="imgs/Introdução-a-informatico-mokup-1.png"
+              alt=""
+              class="booksection__book-1--img--cover"
+            />
+          </div>
+          <div class="booksection__book-1--details">
+            <h3 class="booksection__book-1--header">
+              Introdução à Informática
+            </h3>
+            <p class="booksection__book-1--text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis,
+              blanditiis eveniet dolorum at corrupti repellat. Praesentium
+              debitis nobis commodi deleniti cum, qui quibusdam ea vero
+              perspiciatis similique, quidem explicabo repudiandae.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="formsection" id="form">
+      <div class="form__wrapper">
+        <form action="#" class="form">
+          <div class="form__group">
+            <input
+              type="text"
+              class="form__input"
+              placeholder="Full name"
+              id="name"
+              required
+            />
+            <label for="name" class="form__label">Full name</label>
+          </div>
+
+          <div class="form__group">
+            <input
+              type="email"
+              class="form__input"
+              placeholder="Email address"
+              id="email"
+              required
+            />
+            <label for="email" class="form__label">Email address</label>
+          </div>
+          <div class="button"><button class="form-btn">Sign up</button></div>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__outro">
+          <p class="footer__outro-text">
+            Nossa missão é ser uma editora que não apenas lança livros, mas
+            também constrói conexões significativas entre especialistas em
+            conteúdo técnicos e leitores em busca de aperfeiçoamento
+            profissionalizantes.
+            <br />
+            Estamos comprometidos em promover uma comunidade literária técnica
+            vibrante, através de eventos, lançamentos, clubes de leitura e
+            iniciativas de incentivo à capacitação técnica. <br />
+            Agradecemos por seu interesse em nossa editora e esperamos que você
+            encontre em nossos livros conteúdos que agregam, estimulam a sua
+            profissão e a projetam para um futuro de sucesso.
+          </p>
+        </div>
+        <div class="footer__icons">
+          <div class="footer-btn">
+            <a class="media-btn" href="#" target="_blank"
+              ><ion-icon class="footer-icon" name="logo-facebook"></ion-icon
+            ></a>
+            <a class="media-btn" href="#" target="_blank"
+              ><ion-icon class="footer-icon" name="logo-instagram"></ion-icon
+            ></a>
+            <a class="media-btn" href="#" target="_blank"
+              ><ion-icon class="footer-icon" name="logo-twitter"></ion-icon
+            ></a>
+            <a class="media-btn" href="#" target="_blank"
+              ><ion-icon class="footer-icon" name="logo-linkedin"></ion-icon
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
