@@ -3,7 +3,7 @@
   width: 100%;
 }
 .bg-car img {
-  width: 910px;
+  width: auto;
   height: calc(100vh - 127px);
   align-items: center;
 }
