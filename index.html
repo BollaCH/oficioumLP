@@ -8,31 +8,36 @@
     <link rel="shortcut icon" type="image/png" href="imgs/Favicon.png" />
     <link rel="stylesheet" href="sass/main.css" />
     <link rel="stylesheet" href="sass/caroseul.css" />
+    <script defer src="js/script.js"></script>
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-    crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <div class="div" id="home"></div>
-    <nav class="nav-bar">
-      <div class="nav-bar__wrapper">
-        <div class="nav-bar__logo">
-          <a href="#home">
-            <img
-              class="nav-bar__logo--img"
-              src="imgs/logo_oficioum_-removebg-preview.png"
-              alt="Oficium Logo"
-          /></a>
-        </div>
-        <div class="nav-bar__navigation">
-          <a href="#cta" class="nav-bar__navigation--link">Link 1</a>
-          <a href="#books" class="nav-bar__navigation--link">Link 2</a>
-          <a href="#form" class="nav-bar__navigation--link">Link 3</a>
-        </div>
-      </div>
-    </nav>
+    <header class="header">
+      <a href="#home">
+        <img
+          class="nav-bar__logo"
+          src="imgs/logo_oficioum_-removebg-preview.png"
+          alt="Oficium Logo"
+      /></a>
+      <nav class="nav-bar">
+        <ul class="nav-bar__navigation">
+          <li><a href="#cta" class="nav-bar__navigation--link">Link 1</a></li>
+          <li><a href="#books" class="nav-bar__navigation--link">Link 2</a></li>
+          <li><a href="#form" class="nav-bar__navigation--link">Link 3</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
     <section class="herosection">
       <div
         id="carouselExampleCaptions"
@@ -147,7 +152,9 @@
             laboriosam nisi sequi eum aspernatur ea. Fugit quis nulla eligendi
             veniam praesentium.
           </p>
-          <a href="#form" class="section-cta__details--btn">Pre Order Now</a>
+          <a href="#form" class="section-cta__details--btn"
+            ><ion-icon name="bag-outline"></ion-icon> Pre Order Now</a
+          >
         </div>
       </div>
       <div id="books"></div>
