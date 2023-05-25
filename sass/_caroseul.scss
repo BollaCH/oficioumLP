@@ -1,13 +1,18 @@
 .bg-car {
   height: calc(100vh - 110px);
   width: 100%;
+  & img {
+    max-width: 910px;
+    width: 50%;
+    height: calc(100vh - 110px);
+    align-items: center;
+    @media only screen and (max-width: $bp-medium) {
+      max-width: auto;
+      width: 100%;
+    }
+  }
 }
-.bg-car img {
-  max-width: 910px;
-  width: 50%;
-  height: calc(100vh - 110px);
-  align-items: center;
-}
+
 .card-1 {
   background-color: #e1e0dc;
 }
@@ -20,9 +25,15 @@
 .card-details {
   position: absolute !important;
   top: 200px;
-  left: 1000px !important;
+  left: 700px !important;
   animation: moveInBottom 2s ease-in;
-  /* transform: translateY(300px); */
+  @media only screen and (max-width: $bp-largest) {
+    top: 100px;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    top: 50%;
+    left: 50% !important;
+  }
 }
 .carousel-title {
   font-size: 3.6rem;
@@ -39,11 +50,5 @@
   100% {
     opacity: 1;
     transform: translate(0);
-  }
-}
-@media only screen and (max-width: 50em) {
-  .bg-card img {
-    max-width: auto;
-    width: 100%;
   }
 }

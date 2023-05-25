@@ -27,6 +27,71 @@ body {
   overflow-x: clip;
 }
 
+.bg-car {
+  height: calc(100vh - 110px);
+  width: 100%;
+}
+.bg-car img {
+  max-width: 910px;
+  width: 50%;
+  height: calc(100vh - 110px);
+  align-items: center;
+}
+@media only screen and (max-width: 50em) {
+  .bg-car img {
+    max-width: auto;
+    width: 100%;
+  }
+}
+
+.card-1 {
+  background-color: #e1e0dc;
+}
+
+.card-2 {
+  background-color: #96192d;
+}
+
+.card-3 {
+  background-color: #51238d;
+}
+
+.card-details {
+  position: absolute !important;
+  top: 200px;
+  left: 700px !important;
+  animation: moveInBottom 2s ease-in;
+}
+@media only screen and (max-width: 75em) {
+  .card-details {
+    top: 100px;
+  }
+}
+@media only screen and (max-width: 50em) {
+  .card-details {
+    top: 50%;
+    left: 50% !important;
+  }
+}
+
+.carousel-title {
+  font-size: 3.6rem;
+}
+
+.caroseul-details {
+  font-size: 2rem;
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(20rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
 .booksection {
   padding-top: 10rem;
   display: flex;
@@ -43,6 +108,11 @@ body {
 .booksection__title--text {
   font-size: 4.2rem;
 }
+@media only screen and (max-width: 50em) {
+  .booksection__title--text {
+    text-align: center;
+  }
+}
 .booksection__books {
   display: flex;
   flex-direction: column;
@@ -50,6 +120,11 @@ body {
   width: 80%;
   padding: 5rem 4rem;
   gap: 8rem;
+}
+@media only screen and (max-width: 50em) {
+  .booksection__books {
+    width: 100%;
+  }
 }
 .booksection__book-1 {
   display: flex;
@@ -67,6 +142,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media only screen and (max-width: 50em) {
+  .booksection__book-1--img {
+    width: 100%;
+  }
 }
 .booksection__book-1--img--cover {
   width: 70%;
@@ -133,6 +213,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media only screen and (max-width: 50em) {
+  .booksection__book-2--img {
+    width: 100%;
+  }
 }
 .booksection__book-2--img--cover {
   width: 70%;
@@ -245,10 +330,10 @@ body {
 }
 .section-cta {
   display: flex;
-  height: 100vh;
   align-items: center;
   justify-content: center;
   background-color: #aaa;
+  padding: 4rem 3rem;
 }
 .section-cta__wrapper {
   display: flex;
@@ -268,6 +353,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media only screen and (max-width: 50em) {
+  .section-cta__img {
+    width: 100%;
+  }
 }
 .section-cta__img--cover {
   width: 70%;
@@ -356,6 +446,7 @@ body {
 @media only screen and (max-width: 50em) {
   .form {
     width: 80%;
+    margin-left: 0;
   }
 }
 .form__group {
@@ -490,6 +581,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 50em) {
+  .about {
+    padding: 5rem 2.5rem;
+  }
+}
 .about__details {
   display: flex;
 }
@@ -531,11 +627,29 @@ body {
 .about__text--header {
   font-size: 4rem;
 }
+@media only screen and (max-width: 50em) {
+  .about__text--header {
+    text-align: center;
+  }
+}
 .about__img {
   width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 50em) {
+  .about__img {
+    width: 100%;
+  }
 }
 .about__img--img {
   width: 100%;
+}
+@media only screen and (max-width: 50em) {
+  .about__img--img {
+    width: 60%;
+  }
 }
 
 .herosection {
@@ -614,16 +728,17 @@ body {
 .footer__icons {
   width: 30%;
 }
+@media only screen and (max-width: 50em) {
+  .footer__icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
 
 .footer-btn {
   padding: 0.8rem 1.6rem;
   border-radius: 8px;
-}
-@media only screen and (max-width: 50em) {
-  .footer-btn {
-    width: 70%;
-    display: flex;
-  }
 }
 
 .footer-icon {
